@@ -22,8 +22,9 @@ def main():
             data = getStockData(stockSymbol);
             print(data)
             f.write("The current price of " + stockSymbol + " is:" + data['Global Quote']['05. price'] + "\n");
-        
+            
     f.close()
-    
+    print("Stock quotes retrieved successfully!")
+
 if __name__=="__main__":
     main()
